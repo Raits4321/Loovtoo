@@ -1,8 +1,16 @@
 body{
-    background-color: black;
+    background-color: rgb(26, 26, 26);
 }
 
 .Vastus {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
+}
+
+input {
+    width: 50%;
+    padding: 15px;
+    border: 3px solid rgb(46, 46, 46);
+    border-radius: 10px;
 }
