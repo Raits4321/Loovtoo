@@ -35,3 +35,7 @@ input {
     border: 3px solid rgb(46, 46, 46);
     border-radius: 10px;
 }
+
+input::placeholder {
+    opacity: 0.5;
+}
