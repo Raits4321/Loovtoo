@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,89 @@
 </head>
 <body>
     <div class="Tekstialad">
-        <div class="Tekst">
-            <p>Test</p>
+        <div>
+            <p class="Tekst">Test</p>
             <div class="Vastus">
                 <input id="vastus1">
+                <button id="Kontrol1">Kontrolli</button>
             </div>
         </div>
-        <div class="Vastus">
-            <input id="vastus2">
+        <div>
+            <p class="Tekst">Test</p>
+            <div class="Vastus">
+                <input id="vastus2">
+                <button id="Kontrol2">Kontrolli</button>
+            </div>
         </div>
-        <div class="Vastus">
-            <input id="vastus3">
+        <div>
+            <p class="Tekst">Test</p>
+            <div class="Vastus">
+                <input id="vastus3">
+                <button id="Kontrol3">Kontrolli</button>
+            </div>
         </div>
-        <div class="Vastus">
-            <input id="vastus4">
+        <div>
+            <p class="Tekst">Test</p>
+            <div class="Vastus">
+                <input id="vastus4">
+                <button id="Kontrol4">Kontrolli</button>
+            </div>
         </div>
     </div>
+    <script>
+    var vastused = 0
+    function vastuseKontroll()
+    {
+        var tekstialaVastus1 = document.getElementById("vastus1");
+        if(tekstialaVastus1.value ==="Test") {
+            alert("Õige!")
+            vastused++
+            document.getElementById("Kontrol1").hidden = 1
+        }
+        else {
+            alert("Vale!")
+        }
+    }
+        function vastuseKontroll2()
+    {
+        var tekstialaVastus1 = document.getElementById("vastus2");
+        if(tekstialaVastus1.value ==="Test") {
+            alert("Õige!")
+            vastused++
+            document.getElementById("Kontrol2").hidden = 1
+        }
+        else {
+            alert("Vale!")
+        }
+    }
+        function vastuseKontroll3()
+    {
+        var tekstialaVastus1 = document.getElementById("vastus3");
+        if(tekstialaVastus1.value ==="Test") {
+            alert("Õige!")
+            vastused++
+            document.getElementById("Kontrol3").hidden = 1
+        }
+        else {
+            alert("Vale!")
+        }
+    }
+        function vastuseKontroll4()
+    {
+        var tekstialaVastus1 = document.getElementById("vastus4");
+        if(tekstialaVastus1.value ==="Test") {
+            alert("Õige!")
+            vastused++
+            document.getElementById("Kontrol4").hidden = 1
+        }
+        else {
+            alert("Vale!")
+        }
+    }
+    document.getElementById("Kontrol1").addEventListener("click", vastuseKontroll);
+    document.getElementById("Kontrol2").addEventListener("click", vastuseKontroll);
+    document.getElementById("Kontrol3").addEventListener("click", vastuseKontroll);
+    document.getElementById("Kontrol4").addEventListener("click", vastuseKontroll);
+</script>
 </body>
 </html>
