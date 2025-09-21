@@ -1,5 +1,6 @@
 body{
     background-color: rgb(26, 26, 26);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Vastus {
@@ -38,4 +39,13 @@ input {
 
 input::placeholder {
     opacity: 0.5;
+}
+
+p {
+    -webkit-text-fill-color: white;
+    font-size: large;
+}
+
+#Lingid {
+    -webkit-text-fill-color: rgb(73, 209, 255);
 }
