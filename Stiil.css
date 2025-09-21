@@ -55,3 +55,8 @@ h1 {
     justify-content: center;
     -webkit-text-fill-color: white;
 }
+
+#abi {
+    display: flex;
+    justify-content: center;
+}
