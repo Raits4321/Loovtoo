@@ -9,32 +9,32 @@
 <body>
     <h1 id="Valmis"></h1>
     <div class="Tekstialad">
-        <div>
+        <div id="K1">
             <p class="Tekst">❄︎◆︎♌︎●︎♓︎ ⧫︎⬁︎⬁︎</p>
             <div class="Vastus">
                 <input placeholder="Vastus on tõstutundlik!" id="vastus1">
-                <button id="Kontrol1">Kontrolli</button>
+                <button id="Kontroll1">Kontrolli</button>
             </div>
         </div>
-        <div>
+        <div id="K2">
             <p class="Tekst">SMOkc3RpIHRlaHR1ZA==</p>
             <div class="Vastus">
                 <input placeholder="Vastus on tõstutundlik!" id="vastus2">
-                <button id="Kontrol2">Kontrolli</button>
+                <button id="Kontroll2">Kontrolli</button>
             </div>
         </div>
-        <div>
+        <div id="K3">
             <p class="Tekst">01000101 01100101 01101100 01110110 01101001 01101001 01101101 01100001 01101110 01100101 00100000 01110110 01100001 01110011 01110100 01110101 01110011 00100001</p>
             <div class="Vastus">
                 <input placeholder="Vastus on tõstutundlik!" id="vastus3">
-                <button id="Kontrol3">Kontrolli</button>
+                <button id="Kontroll3">Kontrolli</button>
             </div>
         </div>
-        <div>
+        <div id="K4">
             <p class="Tekst">📁︎📂︎📁︎📂︎📁︎📂︎📁︎📂︎ 📁︎📁︎📂︎📂︎📁︎📁︎📂︎📁︎ 📁︎📂︎📁︎📁︎📁︎📂︎📁︎📂︎ 📁︎📂︎📂︎📁︎📁︎📂︎📂︎📂︎ 📁︎📂︎📂︎📁︎📁︎📁︎📂︎📁︎ 📁︎📁︎📂︎📂︎📁︎📁︎📂︎📁︎ 📁︎📂︎📂︎📂︎📂︎📁︎📁︎📁︎ 📁︎📂︎📂︎📁︎📂︎📂︎📁︎📁︎ 📁︎📂︎📁︎📂︎📂︎📁︎📂︎📁︎ 📁︎📂︎📁︎📁︎📁︎📁︎📂︎📂︎ 📁︎📂︎📁︎📁︎📁︎📁︎📂︎📁︎ 📁︎📁︎📂︎📂︎📁︎📁︎📂︎📁︎ 📁︎📂︎📂︎📂︎📁︎📂︎📂︎📂︎ 📁︎📁︎📂︎📂︎📁︎📂︎📂︎📁︎ 📁︎📂︎📁︎📂︎📁︎📁︎📂︎📁︎ 📁︎📂︎📂︎📁︎📂︎📂︎📂︎📁︎ 📁︎📂︎📁︎📂︎📂︎📁︎📁︎📂︎ 📁︎📂︎📁︎📂︎📁︎📁︎📂︎📂︎ 📁︎📂︎📁︎📁︎📁︎📁︎📂︎📁︎ 📁︎📁︎📂︎📂︎📁︎📁︎📂︎📁︎ 📁︎📂︎📂︎📂︎📁︎📂︎📂︎📂︎ 📁︎📁︎📂︎📂︎📁︎📂︎📂︎📁︎ 📁︎📂︎📁︎📂︎📁︎📁︎📂︎📁︎ 📁︎📂︎📂︎📁︎📂︎📂︎📂︎📁︎ 📁︎📂︎📁︎📂︎📂︎📁︎📁︎📂︎ 📁︎📂︎📁︎📂︎📁︎📁︎📂︎📂︎ 📁︎📂︎📁︎📁︎📁︎📁︎📂︎📁︎ 📁︎📁︎📂︎📂︎📁︎📁︎📁︎📁︎ 📁︎📂︎📂︎📁︎📁︎📂︎📁︎📁︎ 📁︎📂︎📁︎📂︎📁︎📂︎📂︎📂︎ 📁︎📂︎📁︎📁︎📂︎📁︎📂︎📁︎ 📁︎📂︎📂︎📂︎📁︎📁︎📂︎📂︎ 📁︎📂︎📂︎📁︎📁︎📁︎📁︎📂︎ 📁︎📂︎📁︎📂︎📁︎📁︎📂︎📂︎ 📁︎📂︎📁︎📁︎📁︎📂︎📁︎📂︎ 📁︎📁︎📂︎📂︎📂︎📂︎📁︎📂︎</p>
             <div class="Vastus">
                 <input placeholder="Vastus on tõstutundlik!" id="vastus4">
-                <button id="Kontrol4">Kontrolli</button>
+                <button id="Kontroll4">Kontrolli</button>
             </div>
         </div>
     </div>
@@ -43,11 +43,11 @@
     function vastuseKontroll()
     {
         var tekstialaVastus1 = document.getElementById("vastus1");
-        if(tekstialaVastus1.value ==="Test") {
+        if(tekstialaVastus1.value ==="Tubli töö" || "T︎u︎b︎l︎i︎ t︎ö︎ö︎") {
             alert("Õige!")
             vastused++
-            document.getElementById("Kontrol1").hidden = 1
-            if(vastused === 1) {
+            document.getElementById("K1").hidden = 1
+            if(vastused === 4) {
                 document.getElementById("Valmis").innerHTML= 'TUBLI!';
             }
         }
@@ -55,14 +55,14 @@
             alert("Vale!")
         }
     }
-        function vastuseKontroll2()
+    function vastuseKontroll2()
     {
-        var tekstialaVastus1 = document.getElementById("vastus2");
-        if(tekstialaVastus1.value ==="Test") {
+        var tekstialaVastus2 = document.getElementById("vastus2");
+        if(tekstialaVastus2.value ==="Hästi tehtud") {
             alert("Õige!")
             vastused++
-            document.getElementById("Kontrol2").hidden = 1
-            if(vastused === 1) {
+            document.getElementById("K2").hidden = 1
+            if(vastused === 4) {
                 document.getElementById("Valmis").innerHTML= 'TUBLI!';
             }
         }
@@ -70,14 +70,14 @@
             alert("Vale!")
         }
     }
-        function vastuseKontroll3()
+    function vastuseKontroll3()
     {
-        var tekstialaVastus1 = document.getElementById("vastus3");
-        if(tekstialaVastus1.value ==="Test") {
+        var tekstialaVastus3 = document.getElementById("vastus3");
+        if(tekstialaVastus3.value ==="Eelviimane vastus!") {
             alert("Õige!")
             vastused++
-            document.getElementById("Kontrol3").hidden = 1
-            if(vastused === 1) {
+            document.getElementById("K3").hidden = 1
+            if(vastused === 4) {
                 document.getElementById("Valmis").innerHTML= 'TUBLI!';
             }
         }
@@ -85,14 +85,14 @@
             alert("Vale!")
         }
     }
-        function vastuseKontroll4()
+    function vastuseKontroll4()
     {
-        var tekstialaVastus1 = document.getElementById("vastus4");
-        if(tekstialaVastus1.value ==="Test") {
+        var tekstialaVastus4 = document.getElementById("vastus4");
+        if(tekstialaVastus4.value ==="Sa oled väga väga tubli!") {
             alert("Õige!")
             vastused++
-            document.getElementById("Kontrol4").hidden = 1
-            if(vastused === 1) {
+            document.getElementById("K4").hidden = 1
+            if(vastused === 4) {
                 document.getElementById("Valmis").innerHTML= 'TUBLI!';
             }
         }
@@ -100,10 +100,10 @@
             alert("Vale!")
         }
     }
-    document.getElementById("Kontrol1").addEventListener("click", vastuseKontroll);
-    document.getElementById("Kontrol2").addEventListener("click", vastuseKontroll);
-    document.getElementById("Kontrol3").addEventListener("click", vastuseKontroll);
-    document.getElementById("Kontrol4").addEventListener("click", vastuseKontroll);
+    document.getElementById("Kontroll1").addEventListener("click", vastuseKontroll);
+    document.getElementById("Kontroll2").addEventListener("click", vastuseKontroll2);
+    document.getElementById("Kontroll3").addEventListener("click", vastuseKontroll3);
+    document.getElementById("Kontroll4").addEventListener("click", vastuseKontroll4);
 </script>
 </body>
 </html>

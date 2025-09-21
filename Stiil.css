@@ -49,3 +49,9 @@ p {
 #Lingid {
     -webkit-text-fill-color: rgb(73, 209, 255);
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    -webkit-text-fill-color: white;
+}
